@@ -3,7 +3,7 @@ package com.java;
 public class Employee {
 	private int id;
 	private String name;
-	private Address addr;
+	private Address address;
 
 	public int getId() {
 		return id;
@@ -21,17 +21,17 @@ public class Employee {
 		this.name = name;
 	}
 
-	public Address getAddr() {
-		return addr;
+	public Address getAddress() {
+		return address;
 	}
 
-	public void setAddr(Address addr) {
-		this.addr = addr;
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", addr=" + addr + "]";
+	public void desplay() {
+		System.out.println(id + " " + name);
+		System.out.println(address);
 	}
 
 }
